@@ -23,7 +23,7 @@ function App() {
     .then(res=>res.json())
     .then(data=>{
       setImages(data.results);
-      setCounter(8);
+      setCounter(10);
       setShowInfo(true);
     })
     setCopy(query);
@@ -35,13 +35,13 @@ function App() {
     .then(res=>res.json())
     .then(data=>{
       setImages(data.results);
-      setCounter(8);
+      setCounter(10);
       setShowInfo(true);
     })
   },[v]);
   //to increase counter on clicking load more.
   const increaseCounter=()=>{
-    setCounter(counter+8);
+    setCounter(counter+10);
   }
   return (
     <div className="App">
